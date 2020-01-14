@@ -20,4 +20,4 @@ Please feel free to use it and commit any suggestions.
 [2]: https://en.wikipedia.org/wiki/Non-local_means
 [3]: https://imperialcollegelondon.box.com/s/kyskr9fuo6z81ecvpncauq7xmhxtfkil
 
-[figure_01]: https://github.com/Pedro-Filipe/DT_CMR_short_axis_conv_net/blob/master/figure_01.png
+[figure_01]: https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_01.png
