@@ -11,7 +11,11 @@ This CNN is intended to be used with the scan mean image: average of all acquire
 
 An example scan mean image is provided and this is the output from the segment.py file:
 
-![Output][figure_02]
+<p align="left">
+<img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_02.png" width="400px"/>
+</p>
+
+![Output](figure_02.png)
 *A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
 
 Requirements:
