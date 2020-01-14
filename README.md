@@ -8,7 +8,7 @@ This repository contains a python file that automatically segments cardiac mid-v
 <img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
 </p>
 
-*A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
+*Figure 1: A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
 
 ## Usage
 This CNN is intended to be used with the scan mean image (average of all acquired diffusion images after co-registration). It also seems to work well for individual diffusion images if they are strongly denoised with a non-local means algorithm [2].
@@ -27,7 +27,7 @@ The output from the segment.py file is:
 <img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_02.png" width="400px"/>
 </p>
 
-*Input and output of the segment.py script.*
+*Figure 2: Input and output of the segment.py script. Each colour represents a different class as shown in figure 1.*
 
 ## Requirements
 
