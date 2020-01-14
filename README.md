@@ -7,7 +7,7 @@ This repository contains a python file that loads a pre-trained U-Net [1] based 
 This CNN is intended to be used with the scan mean image: average of all acquired diffusion images after co-registration. It also seems to work well for individual diffusion images if they are denoised with a non-local means denoising algorithm [2].
 
 <p align="left">
-<img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="400px"/>
+<img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
 </p>
 
 *A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
