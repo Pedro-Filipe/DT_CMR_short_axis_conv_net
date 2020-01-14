@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This repository contains a python file that loads a pre-trained U-Net [1] based convolutional neural network (CNN). This CNN was trained to segment different regions of a cardiac mid-ventricular short-axis diffusion tensor image.
-
-This CNN is intended to be used with the scan mean image: average of all acquired diffusion images after co-registration. It also seems to work well for individual diffusion images if they are denoised with a non-local means denoising algorithm [2].
+This repository contains a python file that automatically segments cardiac mid-ventricular short-axis diffusion tensor images. It loads a pre-trained U-Net [1] based convolutional neural network (CNN). This CNN was trained by the cardiac diffusion team at the Royal Brompton Hospital.
 
 <p align="left">
 <img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
@@ -12,7 +10,14 @@ This CNN is intended to be used with the scan mean image: average of all acquire
 
 *A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
 
-An example scan mean image is provided and this is the output from the segment.py file:
+## Usage
+This CNN is intended to be used with the scan mean image (average of all acquired diffusion images after co-registration). It also seems to work well for individual diffusion images if they are strongly denoised with a non-local means denoising algorithm [2].
+
+An example scan mean image is provided:
+
+- dti_short_axis_example.png
+
+The output from the segment.py file is:
 
 <p align="left">
 <img src="https://github.com/ImperialCollegeLondon/DT_CMR_short_axis_conv_net/blob/master/figure_02.png" width="400px"/>
@@ -20,10 +25,10 @@ An example scan mean image is provided and this is the output from the segment.p
 
 *Input and output of the segment.py script.*
 
-Requirements:
+## Requirements
 
-- CNN HDF5 file can be downloaded from here: [3].
-- tensorflow (v1.14), numpy, scipy
+- CNN HDF5 file can be downloaded from here: [3] (400 MB).
+- Tensorflow (v1.14), numpy, matplotlib
 
 Tested in Python 3.6 (anaconda) with macOS Catalina. 
 
