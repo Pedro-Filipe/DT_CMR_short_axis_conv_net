@@ -11,7 +11,11 @@ This repository contains a python file that automatically segments cardiac mid-v
 *A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
 
 ## Usage
-This CNN is intended to be used with the scan mean image (average of all acquired diffusion images after co-registration). It also seems to work well for individual diffusion images if they are strongly denoised with a non-local means denoising algorithm [2].
+This CNN is intended to be used with the scan mean image (average of all acquired diffusion images after co-registration). It also seems to work well for individual diffusion images if they are strongly denoised with a non-local means algorithm [2].
+
+The network was trained with STEAM images acquired at 3T. The input image shape must be a rectangular field of view with (256, 96) pixels. For more information please see the following article:
+
+*(coming soon)*
 
 An example scan mean image is provided:
 
@@ -32,7 +36,9 @@ The output from the segment.py file is:
 
 Tested in Python 3.6 (anaconda) with macOS Catalina. 
 
-Please feel free to use it and commit any suggestions.
+Please feel free to use it and commit any suggestions. If used in a publication please reference the following paper:
+
+*(coming soon)*
 
 [1]: https://en.wikipedia.org/wiki/U-Net
 [2]: https://en.wikipedia.org/wiki/Non-local_means
