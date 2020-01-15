@@ -29,12 +29,14 @@ The output from the segment.py file is:
 
 *Figure 2: Input and output of the segment.py script. Each colour represents a different class as shown in figure 1.*
 
+We are confident the U-Net will work with data from other centers provided a similar protocol is used: resolution, field strength and a STEAM based sequence. Although untested, we do not expect good results from a spin-echo based sequence as the image contrast will be quite different, in particular the blood signal in the LV and RV cavity. This is likely to “confuse” the network.
+
 ## Requirements
 
 - CNN HDF5 file can be downloaded from here: [3] (400 MB).
 - Tensorflow (v1.14), numpy, matplotlib
 
-Tested in Python 3.6 (anaconda) with macOS Catalina. 
+Tested in Python 3.6 (anaconda) with macOS Catalina.
 
 Please feel free to use it and commit any suggestions. If used in a publication please reference the following paper:
 
