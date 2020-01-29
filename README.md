@@ -5,7 +5,7 @@
 This repository contains a python file that automatically segments cardiac mid-ventricular short-axis diffusion tensor images. It loads a pre-trained U-Net [1] based convolutional neural network (CNN). This CNN was trained by the cardiac diffusion team at the Royal Brompton Hospital.
 
 <p align="left">
-<img src="https://github.com/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
+<img src="https://github.com/Pedro-Filipe/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
 </p>
 
 *Figure 1: A: U-Net based CNN architecture. B: Example of segmented classes in a short-axis image.*
@@ -24,7 +24,7 @@ An example scan mean image is provided:
 The output from the segment.py file is:
 
 <p align="left">
-<img src="https://github.com/DT_CMR_short_axis_conv_net/blob/master/figure_02.png" width="400px"/>
+<img src="https://github.com/Pedro-Filipe/DT_CMR_short_axis_conv_net/blob/master/figure_02.png" width="400px"/>
 </p>
 
 *Figure 2: Input and output of the segment.py script. Each colour represents a different class as shown in figure 1.*
