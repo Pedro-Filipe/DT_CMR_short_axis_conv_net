@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains a python file that automatically segments cardiac mid-ventricular short-axis diffusion tensor images. It loads a pre-trained U-Net [1] based convolutional neural network (CNN). This CNN was trained by the cardiac diffusion team at the Royal Brompton Hospital.
+This repository contains a python script that automatically segments cardiac mid-ventricular short-axis diffusion tensor images. It loads a pre-trained U-Net[1] based convolutional neural network (CNN). This CNN was trained by the cardiac diffusion team at the Royal Brompton Hospital.
 
 <p align="left">
 <img src="https://github.com/Pedro-Filipe/DT_CMR_short_axis_conv_net/blob/master/figure_01.png" width="600px"/>
@@ -13,7 +13,7 @@ This repository contains a python file that automatically segments cardiac mid-v
 ## Usage
 This CNN is intended to be used with the scan mean image (average of all acquired diffusion images after co-registration). It also seems to work well for individual diffusion images if they are strongly denoised with a non-local means algorithm [2].
 
-The network was trained with STEAM images acquired at 3T. The input image shape must be a rectangular field of view with (256, 96) pixels. For more information please see the following article:
+The network was trained with mid-ventricular STEAM images acquired at 3T. The input image shape must be a rectangular field of view with (256, 96) pixels (grayscale). For more information please see the following article:
 
 *(coming soon)*
 
@@ -29,7 +29,7 @@ The output from the segment.py file is:
 
 *Figure 2: Input and output of the segment.py script. Each colour represents a different class as shown in figure 1.*
 
-We are confident the U-Net will work with data from other centers provided a similar protocol is used: resolution, field strength and a STEAM based sequence. Although untested, we do not expect good results from a spin-echo based sequence as the image contrast will be quite different, in particular the blood signal in the LV and RV cavity. This is likely to “confuse” the network.
+We are confident the U-Net will work with data from other centers provided a similar protocol is used: resolution, field strength and a STEAM based sequence. Although untested, we do not expect good results from a spin-echo based sequence as the image contrast will be quite different, in particular the blood signal in the LV and RV cavity.
 
 ## Requirements
 
