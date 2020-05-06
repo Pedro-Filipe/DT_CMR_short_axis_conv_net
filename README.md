@@ -30,7 +30,9 @@ The output from the segment.py file is:
 
 *Figure 2: Input and output of the segment.py script. Each colour represents a different class as shown in figure 1.*
 
-We are confident the U-Net will work with data from other centers provided a similar protocol is used: resolution, field strength and a STEAM based sequence. Although untested, we do not expect good results from a spin-echo based sequence as the image contrast will be quite different, in particular the blood signal in the LV and RV cavity.
+We are confident the U-Net will work with data from other centers provided a similar protocol is used: resolution, field strength and a STEAM based sequence. 
+
+Although untested, we do not expect good results from a spin-echo based sequence as the image contrast will be quite different, in particular the blood signal in the LV and RV cavity. If enough data is available we suggest widely used transfer learning-based methods.  
 
 ## Requirements
 
