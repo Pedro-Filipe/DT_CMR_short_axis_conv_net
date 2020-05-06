@@ -15,7 +15,8 @@ This CNN is intended to be used with the scan mean image (average of all acquire
 
 The network was trained with mid-ventricular STEAM images acquired at 3T. The input image shape must be a rectangular field of view with (256, 96) pixels (grayscale). For more information please see the following article:
 
-*(coming soon)*
+[Ferreira PF, Martin RR, Scott AD, Khalique Z, Yang G, Nielles-Vallespin S, Pennell DJ, Firmin DN. Automating in vivo cardiac diffusion tensor postprocessing with deep learning-based segmentation. Magn Reson Med. 2020 .
+](https://doi.org/10.1002/mrm.28294)
 
 An example scan mean image is provided:
 
@@ -40,7 +41,8 @@ Tested in Python 3.6 (anaconda) with macOS Catalina.
 
 Please feel free to use it and commit any suggestions. If used in a publication please reference the following paper:
 
-*(coming soon)*
+[Ferreira PF, Martin RR, Scott AD, Khalique Z, Yang G, Nielles-Vallespin S, Pennell DJ, Firmin DN. Automating in vivo cardiac diffusion tensor postprocessing with deep learning-based segmentation. Magn Reson Med. 2020 .
+](https://doi.org/10.1002/mrm.28294)
 
 [1]: https://en.wikipedia.org/wiki/U-Net
 [2]: https://en.wikipedia.org/wiki/Non-local_means
